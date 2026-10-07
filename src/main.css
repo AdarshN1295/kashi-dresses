@@ -1,0 +1,7 @@
+@import "tailwindcss";   
+
+.page-width{
+    width: 98%;
+    max-width: 100%;
+    margin: auto;
+}
