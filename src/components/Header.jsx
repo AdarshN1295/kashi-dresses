@@ -14,8 +14,10 @@ export const NAV_LINKS = [
   { label: "Contact", href: "#contact-section-layout" },
 ];
 
-export const WHATSAPP_URL = "https://wa.me/919826444415"; // replace with real number
+const WHATSAPP_NUMBER = "919826444415";
+const WHATSAPP_MESSAGE = "Hello! I'm visiting from your website (kashi dresses). I'm interested in your collection. Could you please share more details?";
 
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 export function Logo() {
   return (
     <a href="/" className="flex flex-col items-center leading-none text-[#7A1F1F]">
